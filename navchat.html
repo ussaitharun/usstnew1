@@ -1,0 +1,455 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:lavender;
+            }
+            nav{
+                display: flex;
+                justify-content:space-around;
+                background-color:#ff1d58;
+               color: whitesmoke;
+               width:100%;
+               font-family:cursive;
+               position:fixed;
+               top:0;
+               left: 0;
+               align-items:start;
+               z-index:10;
+               animation-name:navbar;
+               animation-timing-function:ease;
+               animation-duration:8s;
+               animation-iteration-count: infinite;
+
+            }
+            ul li{
+                list-style:none;
+                display:inline-block;
+                padding:30px;
+                transition-duration:1s;
+                list-style:none;
+                text-decoration:none;
+             
+            }
+            nav div{
+                margin-left:-30;
+            }
+            ul li:hover{
+                border:2px inset black;
+                padding:5px;
+                background-color:white;
+                color:#ff1d58;
+                border-radius:10px 10px 10px  1px;
+                transition-duration:2s;
+                transition-timing-function:ease;
+            }
+            .content{
+                color:black;
+                margin-top:200px;
+                animation-name: pappu;
+                opacity:0;
+                animation-duration:2s;
+                animation-fill-mode: forwards;
+
+            }
+    
+            @keyframes  pappu {
+                100%{
+                    opacity:1;
+                    animation-timing-function:ease;
+                    animation-duration:3s;
+                    transform:translateY(10px);
+
+                }
+                
+            }
+            .content1{
+                color:black;
+                margin-top:200px;
+                animation-name:pappu1;
+                opacity:0;
+                animation-duration:2s;
+                animation-fill-mode: forwards;
+                animation-delay:1s;
+                margin-top:100px;
+
+            }
+            @keyframes  pappu1 {
+                100%{
+                    opacity:1;
+                    animation-timing-function:ease;
+                    animation-duration:3s;
+                    transform:translateY(-30px);
+                    
+                }
+                
+            }
+            .image{
+                position:absolute;
+                top:200;
+                right:20;
+                animation-name:img1;
+                animation-delay:2s;
+                opacity:0;
+                animation-fill-mode:forwards;
+                animation-duration:2s;
+           
+            }
+            @keyframes img1{
+                100%{
+                    animation-timing-function:ease;
+                    opacity:1;
+                    animation-duration: 3s;
+                    transform: translateX(-30px);
+                  
+            
+                }
+            }
+            @keyframes navbar{
+                0%{background-color:#ff1d58;
+                }
+                25%{
+                    background-color: orange;
+                }
+                50%{
+                    background-color: chocolate;
+                }
+                75%{
+                    background-color: cyan;
+                }
+                100%{
+                    background-color: black;
+                }
+
+            }
+            
+            .box2{
+                border:2px solid black;
+                width:350;
+                height:600;
+                margin-left:50;
+                margin-top: 50;
+            
+                border-radius:50px 50px 50px 5px;
+                background-color: black;
+                position:sticky;
+                top:100;
+            }
+
+                
+    
+        .box2  .li1{
+                position:absolute;
+                top:80;
+               left:10; 
+                color:white;
+                font-family:cursive;   
+    
+            display: inline-block;
+            
+            background-color:cyan;
+            width:30;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 40px 4px;
+            color:black;
+            font-size:20px;
+        }
+        .box2  .li2{
+            position: absolute;
+            top:130;
+            left:250; 
+             color:white;
+            font-family:cursive;   
+            display: inline-block;
+            background-color:whitesmoke;
+            width:30;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 4px 40px;
+            color:black;
+            font-size:20px;
+            
+        }
+        .box2  .li3{
+                position:absolute;
+                top:220;
+               left:10; 
+                color:white;
+                font-family:cursive;   
+    
+            display: inline-block;
+            
+            background-color:cyan;
+            width:auto;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 40px 4px;
+            color:black;
+            font-size:20px;
+        }
+        .box2 .li4{
+            position: absolute;
+            top:320;
+            left:150; 
+             color:white;
+            font-family:cursive;   
+            display: inline-block;
+            background-color:whitesmoke;
+            width:auto;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 4px 40px;
+            color:black;
+            font-size:20px;
+            
+        }
+        .box2  .li5{
+            position: absolute;
+            top:390;
+            left:140; 
+             color:white;
+            font-family:cursive;   
+            display: inline-block;
+            background-color:whitesmoke;
+            width:auto;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 4px 40px;
+            color:black;
+            font-size:20px;
+            
+        }
+        .box2 .li6{
+                position:absolute;
+                top:460;
+               left:10; 
+                color:white;
+                font-family:cursive;   
+    
+            display: inline-block;
+            
+            background-color:cyan;
+            width:auto;
+            height:5;
+            text-align:center;
+            border-radius:40px 40px 40px 4px;
+            color:black;
+            font-size:20px;
+        }
+        .box2  .li7{
+                position:absolute;
+                top:-1;
+               left:-1; 
+                color:white;
+                font-family:cursive;   
+            display: inline-block;
+            width:291;
+            color: black;
+            height:5;
+            text-align:center;
+            background-color: whitesmoke;
+            border-radius:49px 49px 0px 0px;
+            font-size:20px;
+            opacity:0.7;
+        }
+        .box2  .li8{
+                position:absolute;
+                top:531;
+               left:-1; 
+                color:white;
+                font-family:cursive;   
+            display: inline-block;
+            width:294;
+            height:10;
+            color: black;
+    
+            font-family:cursive;
+            background-color:wheat;
+            border-radius:100px 50px 99px 5px;
+            opacity:0.9;
+
+      
+        }
+        .box2 .li1{
+            opacity:0;
+            animation-name: pappu3;
+            animation-duration:3s;
+            animation-fill-mode: forwards;
+            
+
+        }
+        @keyframes pappu3 {
+            100%{
+                opacity:1;
+                animation-timing-function:ease;
+                animation-delay:1s;
+                transform:translateX(5px);
+                
+            
+            }
+        }
+
+        .box2 .li2{
+            opacity:0;
+            animation-name:pappu3;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-delay:1s;
+
+        }
+        .box2 .li3{
+            opacity:0;
+            animation-name:pappu3;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-delay:2s;
+
+        }
+        .box2 .li4{
+            opacity:0;
+            animation-name:pappu3;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-delay:3s;
+
+        }
+        .box2 .li5{
+            opacity:0;
+            animation-name:pappu3;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-delay:4s;
+
+        }
+        .box2 .li6{
+            opacity:0;
+            animation-name:pappu3;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-delay:5s;
+
+        }
+        .am{
+            background-color:#ff8;
+            width:100%;
+        }
+        .footer{
+            background-color: black;
+            width:100%;
+
+        }
+        
+        
+           
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div><pre style="font-family:cursive;">USST  PTOJECT</pre></div>
+            <ul>
+                <li>project</li>
+                <a href="#dir" style="text-decoration:none;color:white;"><li>chat box</li></a>
+                <li>about</li>
+            </ul>
+
+        </nav>
+        
+        <div class="content">
+            <h2>About project:</h2>
+            <pre style="font-family:cursive;">Empower your communication with our cutting-edge 
+chat box a dynamic platform for seamless messaging, collaboration, and productivity. 
+Experience real-time conversations, multimedia support, 
+and robust security features in an intuitive interface tailored to your needs. 
+Elevate your interactions and streamline your workflow with our versatile chat solution."
+            </pre>
+            </div>
+     <pre style="font-family:cursive" class="content1">
+ Step into the future of communication with our innovative chat box solution. 
+ Whether you're connecting with colleagues, 
+ coordinating projects, or catching up with friends, 
+ our platform offers a seamless experience like no other. 
+ From real-time messaging to multimedia support,
+  customizable themes, and advanced security features, 
+  we've got everything you need to elevate your conversations
+  and boost productivity. Join the conversation revolution today!"
+
+            </pre>         
+<pre style="font-family:cursive;transition-delay:5s;" class="content1">
+"Introducing our state-of-the-art chat box  your gateway to instant,
+ engaging conversations. With a sleek interface and powerful features, 
+ our platform redefines communication in the digital age. 
+ From vibrant emojis to secure file sharing, group chats to personalized profiles, 
+ every interaction is enhanced for maximum impact. Whether you're brainstorming ideas, 
+ sharing updates, or simply staying connected, 
+ our chat box empowers you to communicate effortlessly and effectively. 
+Join the conversation and experience the future of connectivity today."
+</pre>
+
+
+
+
+     
+
+        </div>
+        <div class="image">
+            <img src="https://m.media-amazon.com/images/I/41Ac16Tk8IL.png" width="350">
+        </div>
+        <br>
+        
+        <div class="title2" style="font-family:cursive;"><h2 id="dir">chat  Box</h2></div>
+            <div class="am">
+        
+        <div class="box2">
+           
+            <ul>
+              
+                <li class="li1">hi..!</li>
+                <li class="li2">hello..!</li>
+                <li class="li3">how is your day ?</li>
+                <li class="li4">it's been good</li>
+                <li class="li5">how about you?</li>
+                <li class="li6">I'm doing well</li>
+                <li class="li7">Tharun</li>
+                <li class="li8"><pre style="font-family: cursive;">send message....</pre></li>
+            </ul>
+        </div>  
+    
+        <pre style="font-family:cursive;">
+                                                                                     Behold! A marvel of digital artifice, a wondrous contrivance woven from the strands of code and the ethereal hum of electrons.
+           
+                                                                                     Behold the Chat Box, an emissary of words, a vessel through which thoughts traverse the vast expanse of cyberspace. 
+           
+                                                                                     Its presence, an echo of human intention, resonates with the weight of countless interactions.
+
+                                                                                     Within its binary bosom resides the power to connect souls across oceans and continents,
+          
+                                                                                     to bridge chasms of distance and time with the mere keystrokes of its operator. With each message it delivers, 
+           
+                                                                                     it weaves a tapestry of communication, threading the needle of understanding through the fabric of the digital realm.
+            
+                                                                                     But do not be deceived by its simplicity, for beneath its unassuming facade lies a labyrinth of algorithms and heuristics,
+        
+                                                                                     tirelessly parsing and processing the raw data of human expression. It dances with the elegance of a maestro, 
+           
+                                                                                     orchestrating the symphony of conversation with precision and grace.
+            
+                                                                                     With every click, every tap, it breathes life into the virtual ether, infusing it with the essence of human interaction. It is a sentinel of connection, 
+           
+                                                                                     a sentinel of knowledge, a sentinel of the digital age. Behold the Chat Box, for in its humble form lies the promise of boundless communication.
+            
+            
+            
+            
+            
+            </pre>
+            </div>
+            <center>
+            <div class="footer"> 
+                <h3><mark style="background-color:red;">Powered</mark> <mark style="background-color:white">By</mark></h2> <h3><mark style="background-color:white;">u.sesha sai</mark> <mark style="background-color:red;">tharun</mark></h3>
+            </div>
+            </center>
+        
+    </body>
+</html>
